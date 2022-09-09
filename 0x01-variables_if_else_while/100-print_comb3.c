@@ -1,21 +1,31 @@
 #include <stdio.h>
+
 /**
-  * main - Prints the alphabet at reverse
+  * main - Prints combination of numbers
   *
   * Return: Always (Success)
   */
 int main(void)
 {
-	char c;
-for (c = 'z'; c >= 'a'; c--)
+	int c, i;
+
+for (c = '0'; c <= '9'; c++)
 	{
-		putchar(c);
+		for (i = '0'; i <= '9'; i++)
+		{
+			if (c < i)
+			{
+				putchar(c);
+				putchar(i);
+if (c != '8' || (c == '8' && i != '9'))
+				{
+					putchar(',');
+					putchar(' ');
+				}
+			}
+		}
 	}
-for (c = 'z'; c >= 'a'; c--)
-	{
-		putchar(c);
-	}
+
 putchar('\n');
 return (0);
 }
-
