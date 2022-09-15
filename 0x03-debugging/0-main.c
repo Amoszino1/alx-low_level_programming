@@ -1,17 +1,14 @@
 #include "main.h"
+
 /**
- * main - main
- * Return: 0
+ * mul - multipies two integers
+ * @a: number1
+ * @b: number2
+ * Return: The multiplication result of the numbers
  */
 
-int main(void)
+int mul(int a, int b)
 {
-int i;
-i = 0;
-
-positive_or_negative(i)
-
-	return (0);
-
+	return (a * b);
 }
 
