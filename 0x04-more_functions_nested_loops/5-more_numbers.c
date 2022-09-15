@@ -1,23 +1,27 @@
-#include "main.h"
+#include"main.h
 
-/*
- * more_numbers -  checks for checks for a digit (0 through 9).
- * Return: Always 0.
- */
+/**
+ * more_numbers - print 0 - 14 ten times and you
+ *		can only use _putchar three times
+ *
+ * Return: Always 0 (Success)
+*/
 
 void more_numbers(void)
 {
-	int a, ro;
+	int num, row, count;
 
-	for (ro = 0; ro < 10; ro++)
+	for (row = 1; row <= 10; ++row)
 	{
-		for (a = 0; a <= 14; a++)
+		for (count = 0; count <= 14; ++count)
 		{
-			if (a >= 10)
+			num = count;
+			if (count > 9)
 			{
-				_putchar((a / 10) + '0');
+				_putchar(1 + 48);
+				num = count % 10;
 			}
-			_putchar((a % 10) + '0');
+			_putchar(num + 48);
 		}
 		_putchar('\n');
 	}
