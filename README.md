@@ -1,1 +1,1 @@
-Betty
+array strings
