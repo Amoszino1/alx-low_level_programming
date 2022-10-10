@@ -1,1 +1,1 @@
-array strings
+0x0E-structures_typedef
